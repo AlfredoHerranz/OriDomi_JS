@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OriDomi</title>
     <style>
+        body{
+            text-align: center;
+            background-color: lightslategray;
+            color: white;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex: 1 1 70%;
+            align-items: center;
+        }
+        section{
+            width: 50%;
+            margin-bottom: 140px;
+        }
+        p{
+            margin-right: 70%;
+            position: absolute;
+            z-index: -1;
+        }
+        #img12{
+            position:static;
+            z-index: 1;
+        }
         img{
-            width: 800px;
+            width:100%;
+            
+        }
+        .sec_des{
+            display: flex;
         }
         div{
             width: fit-content;
@@ -17,11 +49,29 @@
     <script src="js/code.js"></script>
 </head>
 <body>
-    <div id="img12">
-        <img src="img/img1.jpg" alt="" id="img1"></div>
-        <img src="img/img2.jpg" alt="" id="img2">
-        <img src="img/img3.jpg" alt="" id="img3">
-        <img src="img/img4.jpg" alt="" id="img4">
-    
+    <h1 id="titulo">Oridomi</h1>
+    <main>
+        <section>
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ornare pretium semper, enim laoreet magnis hac quisque accumsan dignissim consequat himenaeos aliquet. Dictumst fringilla imperdiet etiam turpis blandit dui arcu ad vulputate cras tristique fames justo inceptos, felis nulla est viverra facilisi ante sem taciti lobortis platea congue eros. Per sollicitudin odio donec senectus leo viverra eros nascetur praesent, erat curabitur imperdiet at non aliquet feugiat himenaeos, inceptos ridiculus potenti pulvinar ligula sagittis conubia dis.</p>-->
+            <div id="img1">
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </section>
+        
+        <section>
+            <div id="plegable"><img src="img/img3.jpg" alt="" id="img3"></div>
+            
+        </section>    
+        <section class="sec_des"> 
+            <div id="twist"><img src="img/img2.jpg" alt="" id="img2"></div>
+            <button id="animar">Animacion</button>
+        </section>
+        <section class="sec_des">
+            <div id="desplegable">
+                <img src="img/img4.jpg" alt="" id="img4">
+            </div>
+            <button id="desplegar">Plegar/Desplegar</button>
+        </section>
+    </main>
 </body>
 </html>
